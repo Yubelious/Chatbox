@@ -1,21 +1,12 @@
 @-moz-document url-prefix("https://duelingnexus.com/game"), url-prefix("https://duelingnexus.com/editor/") {
+/*Game and editor*/
 /*Related things*/
 html {
     background-position: right bottom
 }
-div {
-    font-size: 1vw;
-    line-height: 1;
-}
 .engine-window p, #game-chat-area, #game-chat-area .engine-text-box, #game-end-text, #game-end-title {
     margin: 0;
     padding: 0;
-}
-#editor-menu-container, #editor-menu-content {
-    height: 8vh;
-    width: 100%;
-    padding: 0;
-    position: fixed;
 }
 #editor-container, #game-container, .engine-dark-box {
     margin: 0
@@ -43,9 +34,6 @@ h6 {/*Small headers.*/
     width: 24vw;
     position: fixed;
     top: 0;
-}
-.game-card-tab-button {
-    height: 8vh
 }
 #card-column, #game-card-info {
     height: 92vh;
@@ -103,6 +91,9 @@ h6 {/*Small headers.*/
 #card-if-monster, #card-if-spell, #card-if-trap {
     font: bold 1.1vw sans-serif
 }
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/game") {
 /*Chat*/
 #game-chat-area {/*This is the box that contains the chat to a confined space. It's the heart of this Stylish.*/
     font-size: 2vh;
@@ -123,6 +114,26 @@ h6 {/*Small headers.*/
     position: fixed;
     bottom: 41px;
     left: .6%;
+}
+/*Options tab*/
+.game-card-tab-button {
+    height: 8vh;
+    padding: 0;
+}
+.game-option {
+    padding: .2vw
+}
+table.game-option input {
+    width: 95%
+}
+#game-options {
+    max-height: 72vh;
+    overflow-y: auto;
+}
+#game-options td, #game-options p {
+    font-size: 1vw;
+    line-height: 1;
+    margin: .5vh;
 }
 /*Move the game room out of the way*/
 #game-room-container {
@@ -155,5 +166,14 @@ h6 {/*Small headers.*/
     position: absolute;
     bottom: 41px;
     left: 25vw;
+}
+}
+
+@-moz-document url-prefix("https://duelingnexus.com/editor/") {
+#editor-menu-container, #editor-menu-content {
+    height: 8vh;
+    width: 100%;
+    padding: 0;
+    position: fixed;
 }
 }
