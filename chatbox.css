@@ -94,16 +94,16 @@ h6 {/*Small headers.*/
 }
 
 @-moz-document url-prefix("https://duelingnexus.com/game") {
-/*Chat*/
-#game-chat-area {/*This is the box that contains the chat to a confined space. It's the heart of this Stylish.*/
+/*Chat and Options*/
+/*Chatbox*/
+#game-chat-area {/*This is the box that contains the chat to a confined space. It's the heart of this theme.*/
     font-size: 2vh;
     border: 1px dashed antiquewhite;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: 11vh !important;
+    height: 11vh;
     width: 23vw;
     min-width: 0;
-    position: fixed;
     bottom: 40px;
 }
 #game-chat-area .engine-text-box {/*This is the smaller box where you type into.*/
