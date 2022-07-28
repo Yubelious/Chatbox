@@ -2,7 +2,8 @@
 /*Game and editor*/
 /*Related things*/
 html {
-    background-position: right bottom
+    background-position: right bottom;
+    background-color: black;
 }
 .engine-window p, #game-chat-area, #game-chat-area .engine-text-box, #game-end-text, #game-end-title {
     margin: 0;
